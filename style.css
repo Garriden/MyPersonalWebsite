@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.social-buttons {
+    position: fixed;
+    top: 60%;
+    left: 20px; /* Adjust this value to your preference */
+    transform: translateY(0%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between the buttons */
+    z-index: 1000;
+}
+
+.social-button {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(8, 51, 68);
+    border-radius: 50%; /* Makes the buttons perfectly circular */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;   /* Extra padding can turn a circle into an oval */
+    align-items: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 20px 5px #c7cfed36; /* Adjust color and size as needed */
+}
+
+.social-button img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-button:hover {
+    background-color: rgb(49, 108, 131);
+}
+
+.social-button:hover img {
+    transform: scale(1.1); /* This makes the image inside the button bigger on hover */
+}
+
+.skyPillar-image {
+    position: absolute;
+    top: 150px; /* Adjust top position */
+    right: 10px; /* Adjust left position */
+    width: 320px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the image's aspect ratio */
+    z-index: 1; /* Ensure it's on top of other elements */
+}
+
+.light-glow-pillar {
+    box-shadow: 0 0 100px 50px #53f19760; /* White glow effect */
+    border-radius: 100%;
+    position: absolute; /* Match the position of the image */
+    top: 200px;
+    right: 150px;
+    width: 50px;
+    height: 200px;
+    z-index: 0; /* Place it behind the image */
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 125px;
+  right: 20px;
+  z-index: 99;
+  background-color: rgb(8, 51, 68);
+  color: white;
+  width: 48px;   /* Set a fixed width */
+  height: 48px;  /* Set an EQUAL fixed height */
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Makes the buttons perfectly circular */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 20px 5px #c7cfed36; /* Adjust color and size as needed */
+}
+
+#topBtn:hover {
+    background-color: rgb(49, 108, 131);
+}
